@@ -1,0 +1,2 @@
+#include<iostream>
+using namespace std;int main(){int p[5050],n,k,i,j,c;cin>>n;for(;n>0;--n){cin>>k;j=(k*k+k)/2;for(i=0;i<j;++i)cin>>p[i];c=k-1;for(i=j-k-1;i>=0;--i){k=p[i+c];j=p[i+c+1];p[i]+=(k>j?k:j);if(i==(c*c+c)/2-c)--c;}cout<<p[0]<<endl;}return 0;}
